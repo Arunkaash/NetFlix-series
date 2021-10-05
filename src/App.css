@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+/* h1{
+  background-color: pink;
+  font-family: 'Birthstone', cursive;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main_div{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inner_div{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 400px;
+  background-color: aquamarine;
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-link {
-  color: #61dafb;
+.cards{
+ 
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+   backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    box-shadow: 5px 10px #acdceb;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  /* border: 2px solid green; */
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+ 
+}
+.card img {
+  width: 300px;
+  height: 250px;
+  object-fit:fill;
+}
+.card h2,h5{
+  text-align: center;
+}
+.card a{
+  margin-top: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.card button{
+  cursor: pointer;
+}
+.heading{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 40px;
+  background-color: aqua;
 }
